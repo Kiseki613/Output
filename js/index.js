@@ -1,8 +1,13 @@
-$(document).on("pagecreate","#pageone",function(){
-  $('#button1').on("click", function(){
+$(document).on("pagecreate","#pageone", onDeviceReady);        
+
+document.addEventListener("deviceready",onDeviceReady);
+
+function onDeviceReady(){
+    //alert("onDeviceReady");
+    $('#button1').on("click", function(){
     click();
-  });            
-});            
+  });
+}
 
 function random() {
    
