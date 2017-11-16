@@ -15,12 +15,12 @@ function click(){
     
     if(rand) {
         
-        
+        alert("true");
         navigator.notification.beep(1);
  
     }
     else {
-        
+        alert("false");
        navigator.notification.beep(2);
     }
     
